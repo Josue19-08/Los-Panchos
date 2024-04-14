@@ -2,3 +2,7 @@
 .selected-row {
     background-color: lightblue;
 }
+
+.table {
+    margin-top: 20px !important; /* Puedes ajustar este valor según sea necesario */
+}

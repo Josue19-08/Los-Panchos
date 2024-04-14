@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Panchos</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
@@ -33,11 +33,11 @@
 
                     <div id="navbarBasicExample" class="navbar-menu">
                         <div class="navbar-start">
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="../index.html">
                                 Inicio
                             </a>
 
-                            <a class="navbar-item">
+                            <a class="navbar-item" href="comprarTiquete.html">
                                 Comprar Tiquete
                             </a>
 
@@ -69,51 +69,87 @@
         </div>
     </header>
 
-    <main class="section">
+    <main>
         <div class="container">
-            
-            <div class="container">
-                <table class="table is-striped">
-                    <thead>
-                        <tr>
-                            <th><abbr title="Origen">Origen</abbr></th>
-                            <th><abbr title="Destino">Destino</abbr></th>
-                            <th><abbr title="Fecha">Fecha</abbr></th>
-                            <th><abbr title="Hora">Hora</abbr></th>
-                            <th><abbr title="Tipo">Tipo</abbr></th>
-                            <th><abbr title="Costo">Costo</abbr></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Aquí puedes agregar filas con los datos -->
-                        <tr>
-                            <td>Origen1</td>
-                            <td>Destino1</td>
-                            <td>Fecha1</td>
-                            <td>Hora1</td>
-                            <td>Tipo1</td>
-                            <td>Costo1</td>
-                        </tr>
-                        <tr>
-                            <td>Origen2</td>
-                            <td>Destino2</td>
-                            <td>Fecha2</td>
-                            <td>Hora2</td>
-                            <td>Tipo2</td>
-                            <td>Costo2</td>
-                        </tr>
-                        
-                        <!-- Puedes agregar más filas según necesites -->
-                    </tbody>
-                </table>
-            </div>
-            
+            <table class="table is-striped is-bordered table is-hoverable" style="margin: 0 auto;">
 
+                <div>
+
+                    <p class="title is-2" style="margin: 0 auto; text-align: center;">Rutas</p>
+                    <p class="subtitle is-4" style="margin: 0px auto; text-align: center; margin-bottom: 25px;">
+                        Autobuses</p>
+
+
+                    <div class="field">
+                        <div class="control is-small is-loading" style="width: 220px; margin: 0 auto;">
+                            <input class="input" type="text" placeholder="Ingrese la ruta deseada" id="busquedaRuta"
+                                data-filtro="sin-filtro" oninput="filtrarTabla()">
+
+
+                            <div class="dropdown is-centered is-hoverable">
+                                <div class="dropdown-trigger">
+                                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3"
+                                        style="width: 220px; margin-top: 10px; margin-bottom: 30px;">
+                                        <span>Filtrado</span>
+                                        <span class="icon is-small">
+                                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                                    <div class="dropdown-content">
+                                        <a href="#" class="dropdown-item" data-filtro="origen">Origen</a>
+                                        <hr class="dropdown-divider" />
+                                        <a href="#" class="dropdown-item" data-filtro="destino">Destino</a>
+                                        <hr class="dropdown-divider" />
+                                        <a href="#" class="dropdown-item" data-filtro="fecha">Fecha</a>
+                                        <hr class="dropdown-divider" />
+                                        <a href="#" class="dropdown-item" data-filtro="hora">Hora</a>
+                                        <hr class="dropdown-divider" />
+                                        <a href="#" class="dropdown-item" data-filtro="tipo">Tipo</a>
+                                        <hr class="dropdown-divider" />
+                                        <a href="#" class="dropdown-item" data-filtro="sin-filtro">Sin Filtro</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <thead>
+                    <tr>
+                        <th><abbr title="Origen">Origen</abbr></th>
+                        <th><abbr title="Destino">Destino</abbr></th>
+                        <th><abbr title="Fecha">Fecha</abbr></th>
+                        <th><abbr title="Hora">Hora</abbr></th>
+                        <th><abbr title="Tipo">Tipo</abbr></th>
+                    </tr>
+                </thead>
+                <tbody id="rutasTabla">
+                    <tr>
+                        <td>dddddddd</td>
+                        <td>ab</td>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>cccccc</td>
+                        <td>ab</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
     </main>
 
-    <footer class="footer">
+
+
+    <footer class="footer" style="position: fixed; bottom: 0; width: 100%; padding: 20px 0;">
         <div class="content has-text-centered">
             <p>
                 <strong>Copyright</strong> by <a href="https://github.com/Josue19-08">Josué Araya C00523</a>. <br>
@@ -126,8 +162,9 @@
         </div>
     </footer>
 
+    <script defer src="../js/script.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bulma@1.0.0/js/bulma.min.js"></script>
-    <script src="../js/script.js"></script>
+
 
 </body>
 
