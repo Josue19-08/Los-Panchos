@@ -1,10 +1,33 @@
-document.querySelectorAll('.dropdown-item').forEach(item => {
-    item.addEventListener('click', function() {
-        const filtro = this.getAttribute('data-filtro');
-        document.getElementById('busquedaRuta').setAttribute('data-filtro', filtro);
-        filtrarTabla(); // Llamar a la función filtrarTabla() después de cambiar el filtro
+document.addEventListener('DOMContentLoaded', function () {
+    // Obtener referencias a los elementos del DOM
+    var modal = document.getElementById('modal-pago');
+    var openModalButton = document.getElementById('open-modal');
+    var closeModalButton = modal.querySelector('.delete');
+
+    // Función para abrir el modal
+    function openModal() {
+        modal.classList.add('is-active');
+    }
+
+    // Función para cerrar el modal
+    function closeModal() {
+        modal.classList.remove('is-active');
+    }
+
+    // Agregar event listeners para abrir y cerrar el modal
+    openModalButton.addEventListener('click', openModal);
+    closeModalButton.addEventListener('click', closeModal);
+
+    // Event listener para los elementos con clase '.dropdown-item'
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        item.addEventListener('click', function () {
+            const filtro = this.getAttribute('data-filtro');
+            document.getElementById('busquedaRuta').setAttribute('data-filtro', filtro);
+            filtrarTabla(); // Llamar a la función filtrarTabla() después de cambiar el filtro
+        });
     });
 });
+
 
 function filtrarTabla() {
     const filtro = document.getElementById('busquedaRuta').getAttribute('data-filtro');
@@ -24,7 +47,7 @@ function filtrarTabla() {
                 rowText += celdas[j].textContent.toLowerCase();
             }
             texto = rowText;
-            
+
         } else {
             // Si hay un filtro seleccionado, buscamos en la columna correspondiente
             switch (filtro) {
@@ -59,3 +82,4 @@ function filtrarTabla() {
         }
     }
 }
+
