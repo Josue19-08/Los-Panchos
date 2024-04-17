@@ -41,7 +41,7 @@ function filtrarTabla() {
 
         // Si no hay filtro seleccionado o el filtro es sin-filtro
         if (!filtro || filtro === 'sin-filtro') {
-            document.getElementById('busquedaRuta').placeholder = "Ingrese la ruta deseada";
+            document.getElementById('busquedaRuta').placeholder = "Buscar ruta";
             let rowText = '';
             for (let j = 0; j < celdas.length; j++) {
                 rowText += celdas[j].textContent.toLowerCase();
