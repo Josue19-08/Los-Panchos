@@ -71,8 +71,9 @@
     </header>
 
     <main>
-        <div class="container-filtro">
+        <div class="container-filtro" style="overflow-y: scroll; max-height: calc(100vh - 300px);"> <!-- Agregar estilo overflow-y: scroll y max-height -->
             <table class="table is-striped is-bordered table is-hoverable" style="margin: 0 auto;">
+              
 
                 <div>
 
@@ -107,8 +108,6 @@
                                         <hr class="dropdown-divider" />
                                         <a href="#" class="dropdown-item" data-filtro="hora">Hora</a>
                                         <hr class="dropdown-divider" />
-                                        <a href="#" class="dropdown-item" data-filtro="tipo">Tipo</a>
-                                        <hr class="dropdown-divider" />
                                         <a href="#" class="dropdown-item" data-filtro="sin-filtro">Sin Filtro</a>
                                     </div>
                                 </div>
@@ -124,24 +123,10 @@
                         <th><abbr title="Destino">Destino</abbr></th>
                         <th><abbr title="Fecha">Fecha</abbr></th>
                         <th><abbr title="Hora">Hora</abbr></th>
-                        <th><abbr title="Tipo">Tipo</abbr></th>
                     </tr>
                 </thead>
                 <tbody id="rutasTabla">
-                    <tr>
-                        <td>dddddddd</td>
-                        <td>ab</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>cccccc</td>
-                        <td>ab</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                    </tr>
+                   <!--TABLA AQUI-->
                 </tbody>
             </table>
 

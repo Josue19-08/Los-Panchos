@@ -10,21 +10,11 @@
       "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\rutadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\migrations\\20240417052351_rutadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\lospanchoscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,58 +24,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20240417052351_RutaDB.cs",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240417052351_RutaDB.cs",
-              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Migrations\\20240417052351_RutaDB.cs",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240417052351_RutaDB.cs",
-              "RelativeToolTip": "..\\BDLosPanchos\\Migrations\\20240417052351_RutaDB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T05:23:51.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Ruta.cs",
               "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Ruta.cs",
               "RelativeDocumentMoniker": "..\\BDLosPanchos\\Ruta.cs",
               "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Ruta.cs",
               "RelativeToolTip": "..\\BDLosPanchos\\Ruta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T05:23:07.398Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-04-17T04:34:46.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RutaDTO.cs",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
-              "RelativeDocumentMoniker": "..\\BDLosPanchos\\RutaDTO.cs",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
-              "RelativeToolTip": "..\\BDLosPanchos\\RutaDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:53:01.991Z",
               "EditorCaption": ""
             },
             {
@@ -96,35 +60,22 @@
               "RelativeDocumentMoniker": "Controllers\\RutaController.cs",
               "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\RutaController.cs",
               "RelativeToolTip": "Controllers\\RutaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T03:36:10.81Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-17T03:03:42.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LosPanchosContext.cs",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\LosPanchosContext.cs",
-              "RelativeDocumentMoniker": "..\\BDLosPanchos\\LosPanchosContext.cs",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\LosPanchosContext.cs",
-              "RelativeToolTip": "..\\BDLosPanchos\\LosPanchosContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "DocumentIndex": 1,
+              "Title": "RutaDTO.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\RutaDTO.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\RutaDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T02:48:32.633Z",
+              "WhenOpened": "2024-04-17T03:53:01.991Z",
               "EditorCaption": ""
             }
           ]

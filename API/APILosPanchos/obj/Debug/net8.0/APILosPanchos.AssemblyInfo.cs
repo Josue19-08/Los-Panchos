@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APILosPanchos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df6f75331ceef49ca2df68a05cfb4905f23f7705")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13bc04816cb85c38e6d6bf6003303bf4f9e5e23a")]
 [assembly: System.Reflection.AssemblyProductAttribute("APILosPanchos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APILosPanchos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

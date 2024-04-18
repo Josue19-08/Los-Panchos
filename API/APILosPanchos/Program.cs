@@ -17,6 +17,14 @@ builder.Services.AddDbContext<LosPanchosContext>(options =>
 
 var app = builder.Build();
 
+app.UseCors("AllowOrigin");
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin();
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+});
+
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<LosPanchosContext>();

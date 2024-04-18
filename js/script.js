@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    
     // Obtener referencias a los elementos del DOM
     var modal = document.getElementById('modal-pago');
     var openModalButton = document.getElementById('open-modal');
@@ -23,11 +24,12 @@ document.addEventListener('DOMContentLoaded', function () {
         item.addEventListener('click', function () {
             const filtro = this.getAttribute('data-filtro');
             document.getElementById('busquedaRuta').setAttribute('data-filtro', filtro);
+
             filtrarTabla(); // Llamar a la función filtrarTabla() después de cambiar el filtro
+            
         });
     });
 });
-
 
 function filtrarTabla() {
     const filtro = document.getElementById('busquedaRuta').getAttribute('data-filtro');
@@ -67,10 +69,6 @@ function filtrarTabla() {
                     texto = celdas[3] ? celdas[3].textContent.toLowerCase() : '';
                     document.getElementById('busquedaRuta').placeholder = "Filtrado por Hora";
                     break;
-                case 'tipo':
-                    texto = celdas[4] ? celdas[4].textContent.toLowerCase() : '';
-                    document.getElementById('busquedaRuta').placeholder = "Filtrado por Tipo";
-                    break;
             }
         }
 
@@ -83,3 +81,55 @@ function filtrarTabla() {
     }
 }
 
+const uri = 'http://localhost:5086/api/Ruta';
+let listaDeRutas = [];
+
+// Obtener lista de rutas
+const obtenerListaDeRutas = () => {
+  fetch(uri)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al obtener la lista de rutas');
+      }
+      return response.json();
+    })
+    .then(data => mostrarRutasEnTabla(data))
+    .catch(error => console.error('Error:', error));
+}
+
+// Función para formatear la hora
+const formatearHora = (fecha) => {
+    const fechaObj = new Date(fecha);
+    const hora = fechaObj.getHours().toString().padStart(2, '0');
+    const minutos = fechaObj.getMinutes().toString().padStart(2, '0');
+    const segundos = fechaObj.getSeconds().toString().padStart(2, '0');
+    return `${hora}:${minutos}:${segundos}`;
+  };
+  
+  // Mostrar lista de rutas en la tabla
+  const mostrarRutasEnTabla = (rutas) => {
+    const tablaBody = document.getElementById('rutasTabla');
+    tablaBody.innerHTML = ''; // Limpiar contenido anterior
+    rutas.forEach((ruta) => {
+      const fila = document.createElement('tr');
+      const origenCell = document.createElement('td');
+      origenCell.textContent = ruta.origen;
+      const destinoCell = document.createElement('td');
+      destinoCell.textContent = ruta.destino;
+      const fechaViajeCell = document.createElement('td');
+      fechaViajeCell.textContent = ruta.fechaViaje;
+      const horaSalidaCell = document.createElement('td');
+      horaSalidaCell.textContent = formatearHora(ruta.horaSalida); // Formatear la hora
+  
+      fila.appendChild(origenCell);
+      fila.appendChild(destinoCell);
+      fila.appendChild(fechaViajeCell);
+      fila.appendChild(horaSalidaCell);
+  
+      tablaBody.appendChild(fila);
+    });
+  }
+  
+  // Llamar a la función para obtener la lista de rutas cuando se cargue la página
+  document.addEventListener('DOMContentLoaded', obtenerListaDeRutas);
+  
