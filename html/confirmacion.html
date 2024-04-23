@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Panchos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('YYRcyr-TlBFrXHuUq')
+</script>
+</head>
+
+<body>
+    <header class="section">
+        <div class="container">
+            <div class="columns is-centered">
+
+                <a class="navbar-item" href="../index.html">
+                    <img src="../img/logoNombreSinFondo.svg" width="170">
+                </a>
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+
+                    <div class="navbar-brand">
+
+
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                            data-target="navbarBasicExample">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+
+                    <div id="navbarBasicExample" class="navbar-menu">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="../index.html">
+                                Inicio
+                            </a>
+
+                            <a class="navbar-item"  href="../html/comprarTiquete.html">
+                                Comprar Tiquete
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-half has-text-centered">
+
+
+                    <p class="subtitle is-2">¡Compra exitosa, hemos enviado un correo con los datos de tu tiquete!</p>
+                    <p class="subtitle is-1">¡Buen Viaje!</p>
+
+
+                    
+                    <div class="message-body" style="margin-top: 60px;">
+
+                    <div  class="columns is-centered" id="qrcode"></div>
+                    </div>
+
+                    <div class="card" style="margin-top: 60px;">
+                        <div class="card-content">
+                          <div class="content">
+                            
+
+
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <form id="form">
+                        <div class="field">
+                          <label for="from_name">from_name</label>
+                          <input type="text" name="from_name" id="from_name">
+                        </div>
+                        <div class="field">
+                          <label for="to_name">to_name</label>
+                          <input type="text" name="to_name" id="to_name">
+                        </div>
+                        <div class="field">
+                          <label for="message">message</label>
+                          <input type="text" name="message" id="message">
+                        </div>
+                        <div class="field">
+                          <label for="reply_to" style="font-size: 25px; margin-top: 25px; margin-bottom: 25px;">¿Deseas recibir tu tiquete en tu correo?</label>
+                          <input type="text" name="reply_to" id="reply_to">
+                        </div>
+                      
+                        <input type="submit" id="button" value="Send Email" onclick="insertarDatosFormulario()">
+                      </form>
+                      
+                      <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                      
+                      <script type="text/javascript">
+                        emailjs.init('9rlbUNBJqI6S1Fd85')
+                      </script>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Copyright</strong> by <a href="https://github.com/Josue19-08">Josué Araya C00523</a>. <br>
+                Puedes encontrar más información sobre nosotros en YouTube como
+                <a href="https://www.youtube.com/watch?v=a5tcLf8PXTY">Los Panchos Canal</a>. <br> Puedes
+                buscarnos como
+                <a href="https://m.facebook.com/people/Transportes-Pancho/100054495667753/?locale=es_ES">Los Panchos
+                </a> en Facebook.
+            </p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@1.0.0/js/bulma.min.js"></script>
+
+    <script defer src="../js/qr.js"></script>
+    <script src="../js/qrcode.min.js"></script>
+
+    
+
+</body>
+
+</html>

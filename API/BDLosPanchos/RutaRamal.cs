@@ -16,7 +16,6 @@ namespace LosPanchosDB
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
-        // Claves foráneas
         public int rutaID { get; set; }
         [ForeignKey("rutaID")]
         public virtual Ruta Ruta { get; set; }

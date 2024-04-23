@@ -22,6 +22,39 @@ namespace BDLosPanchos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("BDLosPanchos.Viaje", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("busID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("duracionMinutos")
+                        .HasColumnType("int");
+
+                    b.Property<DateOnly>("fechaViaje")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("horaViaje")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("rutaRamalID")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("busID");
+
+                    b.HasIndex("rutaRamalID");
+
+                    b.ToTable("Viaje", (string)null);
+                });
+
             modelBuilder.Entity("LosPanchosDB.Asiento", b =>
                 {
                     b.Property<int>("id")
@@ -30,18 +63,21 @@ namespace BDLosPanchos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int?>("Tiqueteid")
-                        .HasColumnType("int");
-
                     b.Property<string>("busID")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("numAsiento")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("tiqueteID")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
 
-                    b.HasIndex("Tiqueteid");
-
                     b.HasIndex("busID");
+
+                    b.HasIndex("tiqueteID");
 
                     b.ToTable("Asiento", (string)null);
                 });
@@ -55,12 +91,7 @@ namespace BDLosPanchos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("rutaRamalID")
-                        .HasColumnType("int");
-
                     b.HasKey("placa");
-
-                    b.HasIndex("rutaRamalID");
 
                     b.ToTable("Bus", (string)null);
                 });
@@ -97,12 +128,6 @@ namespace BDLosPanchos.Migrations
                     b.Property<string>("destino")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateOnly>("fechaViaje")
-                        .HasColumnType("date");
-
-                    b.Property<DateTime>("horaSalida")
-                        .HasColumnType("datetime2");
 
                     b.Property<int>("km")
                         .HasColumnType("int");
@@ -147,62 +172,61 @@ namespace BDLosPanchos.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
+                    b.Property<string>("asiento")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("costo")
+                        .HasColumnType("real");
+
                     b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("viajeID")
+                        .HasColumnType("int");
+
                     b.HasKey("id");
+
+                    b.HasIndex("viajeID");
 
                     b.ToTable("Tiquete", (string)null);
                 });
 
-            modelBuilder.Entity("LosPanchosDB.TiqueteAsiento", b =>
+            modelBuilder.Entity("BDLosPanchos.Viaje", b =>
                 {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
-
-                    b.Property<int>("asientoID")
-                        .HasColumnType("int");
-
-                    b.Property<int>("tiqueteID")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("asientoID");
-
-                    b.HasIndex("tiqueteID");
-
-                    b.ToTable("TiqueteAsiento", (string)null);
-                });
-
-            modelBuilder.Entity("LosPanchosDB.Asiento", b =>
-                {
-                    b.HasOne("LosPanchosDB.Tiquete", null)
-                        .WithMany("Asientos")
-                        .HasForeignKey("Tiqueteid");
-
                     b.HasOne("LosPanchosDB.Bus", "Bus")
                         .WithMany()
                         .HasForeignKey("busID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Bus");
-                });
-
-            modelBuilder.Entity("LosPanchosDB.Bus", b =>
-                {
                     b.HasOne("LosPanchosDB.RutaRamal", "RutaRamal")
                         .WithMany()
                         .HasForeignKey("rutaRamalID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("Bus");
+
                     b.Navigation("RutaRamal");
+                });
+
+            modelBuilder.Entity("LosPanchosDB.Asiento", b =>
+                {
+                    b.HasOne("LosPanchosDB.Bus", "Bus")
+                        .WithMany()
+                        .HasForeignKey("busID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LosPanchosDB.Tiquete", "Tiquete")
+                        .WithMany()
+                        .HasForeignKey("tiqueteID");
+
+                    b.Navigation("Bus");
+
+                    b.Navigation("Tiquete");
                 });
 
             modelBuilder.Entity("LosPanchosDB.RutaRamal", b =>
@@ -224,28 +248,15 @@ namespace BDLosPanchos.Migrations
                     b.Navigation("Ruta");
                 });
 
-            modelBuilder.Entity("LosPanchosDB.TiqueteAsiento", b =>
-                {
-                    b.HasOne("LosPanchosDB.Asiento", "Asiento")
-                        .WithMany()
-                        .HasForeignKey("asientoID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("LosPanchosDB.Tiquete", "Tiquete")
-                        .WithMany()
-                        .HasForeignKey("tiqueteID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Asiento");
-
-                    b.Navigation("Tiquete");
-                });
-
             modelBuilder.Entity("LosPanchosDB.Tiquete", b =>
                 {
-                    b.Navigation("Asientos");
+                    b.HasOne("BDLosPanchos.Viaje", "Viaje")
+                        .WithMany()
+                        .HasForeignKey("viajeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Viaje");
                 });
 #pragma warning restore 612, 618
         }

@@ -13,8 +13,5 @@ namespace LosPanchosDB
         [Key]
         public string placa { get; set; }
         public string modelo { get; set; }
-        public int rutaRamalID { get; set; }
-        [ForeignKey("rutaRamalID")]
-        public virtual RutaRamal RutaRamal { get; set; }
     }
 }

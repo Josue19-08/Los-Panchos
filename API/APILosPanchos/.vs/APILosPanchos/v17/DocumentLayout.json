@@ -3,18 +3,52 @@
   "WorkspaceRootPath": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:controllers\\rutacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\controllers\\asientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:controllers\\asientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\rutadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\controllers\\tiquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:controllers\\tiquetecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\asientodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\tiquetedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\tiquete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\asiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\viajedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:controllers\\viajecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\viaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\rutaramal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\ramaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\apilospanchos\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CDF3FF6D-C133-47DE-BE23-F0C153379A4E}|APILosPanchos.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\lospanchoscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\migrations\\20240419195510_tiquetebd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E33D7B1C-C046-465C-ADC8-DA447377B0F5}|..\\BDLosPanchos\\BDLosPanchos.csproj|c:\\ucr\\2024 - ciclo i\\lenguajes para aplicaciones comerciales\\tareas\\arayamarinjosue_c00523_tarea_i_if4101\\api\\bdlospanchos\\migrations\\20240420024525_tiquetedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,55 +62,184 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "TiqueteController.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\TiqueteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TiqueteController.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\TiqueteController.cs",
+              "RelativeToolTip": "Controllers\\TiqueteController.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T19:46:45.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Asiento.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Asiento.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Asiento.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Asiento.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\Asiento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T19:38:06.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AsientoController.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\AsientoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AsientoController.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\AsientoController.cs",
+              "RelativeToolTip": "Controllers\\AsientoController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAwEYAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T19:37:17.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20240419195510_TiqueteBD.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240419195510_TiqueteBD.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Migrations\\20240419195510_TiqueteBD.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240419195510_TiqueteBD.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\Migrations\\20240419195510_TiqueteBD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T19:55:10.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ViajeDTO.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\ViajeDTO.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\ViajeDTO.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\ViajeDTO.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\ViajeDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:57:07.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tiquete.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Tiquete.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Tiquete.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Tiquete.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\Tiquete.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T19:47:12.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RamalDTO.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RamalDTO.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\RamalDTO.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RamalDTO.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\RamalDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:00:14.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Ruta.cs",
               "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Ruta.cs",
               "RelativeDocumentMoniker": "..\\BDLosPanchos\\Ruta.cs",
               "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Ruta.cs",
               "RelativeToolTip": "..\\BDLosPanchos\\Ruta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T05:23:07.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-18T18:00:07.103Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-04-17T04:34:46.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RutaController.cs",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\RutaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RutaController.cs",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\RutaController.cs",
-              "RelativeToolTip": "Controllers\\RutaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAFAAAA",
+              "Title": "TiqueteDTO.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\TiqueteDTO.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\TiqueteDTO.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\TiqueteDTO.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\TiqueteDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:36:10.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T19:47:15.299Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RutaDTO.cs",
-              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
-              "RelativeDocumentMoniker": "..\\BDLosPanchos\\RutaDTO.cs",
-              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaDTO.cs",
-              "RelativeToolTip": "..\\BDLosPanchos\\RutaDTO.cs",
+              "DocumentIndex": 2,
+              "Title": "AsientoDTO.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\AsientoDTO.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\AsientoDTO.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\AsientoDTO.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\AsientoDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T20:46:29.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240420024525_TiqueteDB.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240420024525_TiqueteDB.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Migrations\\20240420024525_TiqueteDB.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Migrations\\20240420024525_TiqueteDB.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\Migrations\\20240420024525_TiqueteDB.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T03:53:01.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-20T02:45:25.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Viaje.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Viaje.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\Viaje.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\Viaje.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\Viaje.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:59:59.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LosPanchosContext.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\LosPanchosContext.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\LosPanchosContext.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\LosPanchosContext.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\LosPanchosContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:57:50.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ViajeController.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\ViajeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ViajeController.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\APILosPanchos\\Controllers\\ViajeController.cs",
+              "RelativeToolTip": "Controllers\\ViajeController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowFEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T17:34:27.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RutaRamal.cs",
+              "DocumentMoniker": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaRamal.cs",
+              "RelativeDocumentMoniker": "..\\BDLosPanchos\\RutaRamal.cs",
+              "ToolTip": "C:\\UCR\\2024 - CICLO I\\Lenguajes para Aplicaciones Comerciales\\Tareas\\ArayaMarinJosue_C00523_Tarea_I_IF4101\\API\\BDLosPanchos\\RutaRamal.cs",
+              "RelativeToolTip": "..\\BDLosPanchos\\RutaRamal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T18:00:17.017Z"
             }
           ]
         }

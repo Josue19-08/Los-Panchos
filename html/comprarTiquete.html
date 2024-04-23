@@ -42,27 +42,6 @@
                                 Comprar Tiquete
                             </a>
 
-                            <div class="navbar-item has-dropdown is-hoverable">
-                                <a class="navbar-link">
-                                    Rutas
-                                </a>
-
-                                <div class="navbar-dropdown">
-                                    <a class="navbar-item">
-                                        About
-                                    </a>
-                                    <a class="navbar-item is-selected">
-                                        Jobs
-                                    </a>
-                                    <a class="navbar-item">
-                                        Contact
-                                    </a>
-                                    <hr class="navbar-divider">
-                                    <a class="navbar-item">
-                                        Report an issue
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </nav>
@@ -71,9 +50,10 @@
     </header>
 
     <main>
-        <div class="container-filtro" style="overflow-y: scroll; max-height: calc(100vh - 300px);"> <!-- Agregar estilo overflow-y: scroll y max-height -->
+        <div class="container-filtro" style="overflow-y: scroll; max-height: calc(100vh - 300px);">
+            <!-- Agregar estilo overflow-y: scroll y max-height -->
             <table class="table is-striped is-bordered table is-hoverable" style="margin: 0 auto;">
-              
+
 
                 <div>
 
@@ -116,23 +96,405 @@
                     </div>
                 </div>
 
-
+                
                 <thead>
                     <tr>
                         <th><abbr title="Origen">Origen</abbr></th>
                         <th><abbr title="Destino">Destino</abbr></th>
+                        <th><abbr title="Ramal">Ramal</abbr></th>
                         <th><abbr title="Fecha">Fecha</abbr></th>
                         <th><abbr title="Hora">Hora</abbr></th>
+                        <th><abbr title="Ver">Ver</abbr></th>
                     </tr>
                 </thead>
                 <tbody id="rutasTabla">
-                   <!--TABLA AQUI-->
+                    <!-- Aquí se agregarán dinámicamente las filas de la tabla -->
                 </tbody>
             </table>
 
+
+            <div class="card" style="margin: 0 auto; max-width: 700px; margin-top: 50px;">
+                <div class="card-content">
+                    <div class="content">
+                        <div class="container" style="margin: 0 auto; max-width: 400px; margin-top: 20px;">
+                            <h3 class="title is-2">Compra de Tiquetes</h3>
+
+                            <!-- Campo para la cantidad de tiquetes para adultos mayores -->
+                            <div class="field">
+                                <p class="subtitle is-5">Pasajero adulto mayor</p>
+                                <div class="control">
+                                    <input class="input" type="number" placeholder="Ingrese la cantidad"
+                                        id="cantidadAdultosMayores">
+                                </div>
+                            </div>
+
+                            <!-- Campo para la cantidad de tiquetes para personas promedio -->
+                            <div class="field">
+                                <p class="subtitle is-5">Pasajero regular</p>
+                                <div class="control">
+                                    <input class="input" type="number" placeholder="Ingrese la cantidad"
+                                        id="cantidadPersonasPromedio">
+                                </div>
+                            </div>
+
+                             <!-- Select dropdown para agregar los viajes -->
+                             <div class="field"style="justify-self: center;">
+                                <p class="subtitle is-5" style="margin-top: 20px;">Seleccione la viaje deseado</p>
+                                <div class="control">
+                                    <div class="select">
+                                        <select id="selectViaje">
+                                            <option>Seleccione un viaje</option>
+                                            <!-- Aquí puedes agregar opciones dinámicamente desde JavaScript -->
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  
+                        <div class="field">
+                            <div class="control">
+                                <button class="button is-primary" id="btnSeleccionarAsientos">Seleccionar Asientos</button>
+                            </div>
+                        </div>
+                        -->
+                            <h1>Seleccione su asiento</h1>
+                            <div class="containerbus">
+                                <!-- Squared ONE -->
+                                <div class="autobus">
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="1" name="check" onclick="mostrarMensajeAsiento(this)" />
+                                                <label for="asiento1" id="1" onclick="mostrarMensajeAsiento(this)">1</label>
+                                            </div>
+                                            
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="2" name="check" />
+                                                <label for="asiento2" id="2" onclick="mostrarMensajeAsiento(this)">2</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="3" name="check" />
+                                                <label for="asiento3" id="3" onclick="mostrarMensajeAsiento(this)">3</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="4" name="check" />
+                                                <label for="asiento4" id="4" onclick="mostrarMensajeAsiento(this)">4</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="5" name="check" />
+                                                <label for="asiento5" id="5" onclick="mostrarMensajeAsiento(this)">5</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="6" name="check" />
+                                                <label for="asiento6" id="6" onclick="mostrarMensajeAsiento(this)">6</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="7" name="check" />
+                                                <label for="asiento7" id="7" onclick="mostrarMensajeAsiento(this)">7</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="8" name="check" />
+                                                <label for="asiento8" id="8" onclick="mostrarMensajeAsiento(this)">8</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="9" name="check" />
+                                                <label for="asiento9" id="9" onclick="mostrarMensajeAsiento(this)">9</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="10" name="check" />
+                                                <label for="asiento10" id="10" onclick="mostrarMensajeAsiento(this)">10</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="11" name="check" />
+                                                <label for="asiento11" id="11" onclick="mostrarMensajeAsiento(this)">11</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="12" name="check" />
+                                                <label for="asiento12" id="12" onclick="mostrarMensajeAsiento(this)">12</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="13" name="check" />
+                                                <label for="asiento13" id="13" onclick="mostrarMensajeAsiento(this)">13</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="14" name="check" />
+                                                <label for="asiento14" id="14" onclick="mostrarMensajeAsiento(this)">14</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="15" name="check" />
+                                                <label for="asiento15" id="15" onclick="mostrarMensajeAsiento(this)">15</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="16" name="check" />
+                                                <label for="asiento16" id="16" onclick="mostrarMensajeAsiento(this)">16</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="17" name="check" />
+                                                <label for="asiento17" id="17" onclick="mostrarMensajeAsiento(this)">17</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="18" name="check" />
+                                                <label for="asiento18" id="18" onclick="mostrarMensajeAsiento(this)">18</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="19" name="check" />
+                                                <label for="asiento19" id="19" onclick="mostrarMensajeAsiento(this)">19</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="20" name="check" />
+                                                <label for="asiento20" id="20" onclick="mostrarMensajeAsiento(this)">20</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="21" name="check" />
+                                                <label for="asiento21" id="21" onclick="mostrarMensajeAsiento(this)">21</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="22" name="check" />
+                                                <label for="asiento22" id="22" onclick="mostrarMensajeAsiento(this)">22</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="23" name="check" />
+                                                <label for="asiento23" id="23" onclick="mostrarMensajeAsiento(this)">23</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="24" name="check" />
+                                                <label for="asiento24" id="24" onclick="mostrarMensajeAsiento(this)">24</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="25" name="check" />
+                                                <label for="asiento25" id="25" onclick="mostrarMensajeAsiento(this)">25</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="26" name="check" />
+                                                <label for="asiento26" id="26" onclick="mostrarMensajeAsiento(this)">26</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="27" name="check" />
+                                                <label for="asiento27" id="27" onclick="mostrarMensajeAsiento(this)">27</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="28" name="check" />
+                                                <label for="asiento28" id="28" onclick="mostrarMensajeAsiento(this)">28</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="29" name="check" />
+                                                <label for="asiento29" id="29" onclick="mostrarMensajeAsiento(this)">29</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="30" name="check" />
+                                                <label for="asiento30" id="30" onclick="mostrarMensajeAsiento(this)">30</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="31" name="check" />
+                                                <label for="asiento31" id="31" onclick="mostrarMensajeAsiento(this)">31</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="32" name="check" />
+                                                <label for="asiento32" id="32" onclick="mostrarMensajeAsiento(this)">32</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="33" name="check" />
+                                                <label for="asiento33" id="33" onclick="mostrarMensajeAsiento(this)">33</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="34" name="check" />
+                                                <label for="asiento34" id="34" onclick="mostrarMensajeAsiento(this)">34</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="35" name="check" />
+                                                <label for="asiento35" id="35" onclick="mostrarMensajeAsiento(this)">35</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="36" name="check" />
+                                                <label for="asiento36" id="36" onclick="mostrarMensajeAsiento(this)">36</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="37" name="check" />
+                                                <label for="asiento37" id="37" onclick="mostrarMensajeAsiento(this)">37</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="38" name="check" />
+                                                <label for="asiento38" id="38" onclick="mostrarMensajeAsiento(this)">38</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="39" name="check" />
+                                                <label for="asiento39" id="39" onclick="mostrarMensajeAsiento(this)">39</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="40" name="check" />
+                                                <label for="asiento40" id="40" onclick="mostrarMensajeAsiento(this)">40</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="41" name="check" />
+                                                <label for="asiento41" id="41" onclick="mostrarMensajeAsiento(this)">41</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="42" name="check" />
+                                                <label for="asiento42" id="42" onclick="mostrarMensajeAsiento(this)">42</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="43" name="check" />
+                                                <label for="asiento43" id="43" onclick="mostrarMensajeAsiento(this)">43</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="44" name="check" />
+                                                <label for="asiento44" id="44" onclick="mostrarMensajeAsiento(this)">44</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="45" name="check" />
+                                                <label for="asiento45" id="45" onclick="mostrarMensajeAsiento(this)">45</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="46" name="check" />
+                                                <label for="asiento46" id="46" onclick="mostrarMensajeAsiento(this)">46</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="47" name="check" />
+                                                <label for="asiento47" id="47" onclick="mostrarMensajeAsiento(this)">47</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="48" name="check" />
+                                                <label for="asiento48" id="48" onclick="mostrarMensajeAsiento(this)">48</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fila">
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="49" name="check" />
+                                                <label for="asiento49" id="49" onclick="mostrarMensajeAsiento(this)">49</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="50" name="check" />
+                                                <label for="asiento50" id="50" onclick="mostrarMensajeAsiento(this)">50</label>
+                                            </div>
+                                        </div>
+                                        <div class="seccion">
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="51" name="check" />
+                                                <label for="asiento51" id="51" onclick="mostrarMensajeAsiento(this)">51</label>
+                                            </div>
+                                            <div class="asiento">
+                                                <input type="checkbox" value="None" id="52" name="check" />
+                                                <label for="asiento52" id="52" onclick="mostrarMensajeAsiento(this)">52</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+
+
+                                </div>
+                            </div>
+ 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- HTML para el botón que abrirá el modal -->
             <div class="buttons is-centered" style="margin-top: 40px;">
-                <button class="button is-primary" id="open-modal">Pagar</button>
+                <button class="button is-primary" id="open-modal" onclick="calcularYActualizar()">Ir a pagar</button>
+            </div>
+
+            <!--Modal viaje-->
+            <div class="modal" id="modal-viaje">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Modal title</p>
+                        <button class="delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <!-- Content ... -->
+                    </section>
+                    <footer class="modal-card-foot">
+                        <div class="buttons">
+                            <button class="button is-success">Save changes</button>
+                            <button class="button">Cancel</button>
+                        </div>
+                    </footer>
+                </div>
             </div>
 
             <!-- HTML para el modal -->
@@ -140,119 +502,140 @@
                 <div class="modal-background"></div>
                 <div class="modal-card">
                     <header class="modal-card-head">
-                        <p class="modal-card-title">Order Summary</p>
+                        <p class="modal-card-title">Método de Pago</p>
                         <button class="delete" aria-label="close"></button>
                     </header>
                     <section class="modal-card-body">
                         <!-- Contenido del modal -->
 
-                <!--Pago-->
+                        <!--Pago-->
 
-                <div class="contenedor">
+                        <div class="contenedor">
 
-                    <!-- Tarjeta -->
-                    <section class="tarjeta" id="tarjeta">
-                        <div class="delantera">
-                            <div class="logo-marca" id="logo-marca">
-                                 <img src="../img/visa.png" alt=""> 
+                            <!-- Tarjeta -->
+                            <section class="tarjeta" id="tarjeta">
+                                <div class="delantera">
+                                    <div class="logo-marca" id="logo-marca">
+                                        <img src="../img/visa.png" alt="">
+                                    </div>
+                                    <img src="../img/chip-tarjeta.png" class="chip" alt="">
+                                    <div class="datos">
+                                        <div class="grupo" id="numero">
+                                            <p class="label">Número Tarjeta</p>
+                                            <p class="numero">#### #### #### ####</p>
+                                        </div>
+                                        <div class="flexbox">
+                                            <div class="grupo" id="nombre">
+                                                <p class="label">Nombre Tarjeta</p>
+                                                <p class="nombre">XXXX XXXX XXXX</p>
+                                            </div>
+
+                                            <div class="grupo" id="expiracion">
+                                                <p class="label">Expiracion</p>
+                                                <p class="expiracion"><span class="mes">MM</span> / <span
+                                                        class="year">AA</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="trasera">
+                                    <div class="barra-magnetica"></div>
+                                    <div class="datos">
+                                        <div class="grupo" id="firma">
+                                            <p class="label">Firma</p>
+                                            <div class="firma">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="grupo" id="ccv">
+                                            <p class="label">CCV</p>
+                                            <p class="ccv"></p>
+                                        </div>
+                                    </div>
+                                    <p class="leyenda">Todos nuestros pagos son seguros
+                                        No tenemos pruebas pero tampoco dudas</p>
+                                    <a href="#" class="link-banco">www.tubanco.com</a>
+                                </div>
+                            </section>
+
+                            <!-- Contenedor Boton Abrir Formulario -->
+                            <div class="contenedor-btn">
+                                <button class="btn-abrir-formulario" id="btn-abrir-formulario">
+                                    <i class="fas fa-plus"></i>
+                                </button>
                             </div>
-                            <img src="../img/chip-tarjeta.png" class="chip" alt="">
-                            <div class="datos">
-                                <div class="grupo" id="numero">
-                                    <p class="label">Número Tarjeta</p>
-                                    <p class="numero">#### #### #### ####</p>
+
+                            <!-- Formulario -->
+                            <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+                               
+                                <div class="grupo">
+                                    <label>Correo electrónico</label>
+                                    <input type="email" autocomplete="off">
+                                </div>
+                                
+                                <div class="grupo">
+                                    <label for="inputNumero">Número Tarjeta</label>
+                                    <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                                </div>
+                                <div class="grupo">
+                                    <label for="inputNombre">Nombre</label>
+                                    <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
                                 </div>
                                 <div class="flexbox">
-                                    <div class="grupo" id="nombre">
-                                        <p class="label">Nombre Tarjeta</p>
-                                        <p class="nombre">Jhon Doe</p>
+                                    <div class="grupo expira">
+                                        <label for="selectMes">Expiracion</label>
+                                        <div class="flexbox">
+                                            <div class="grupo-select">
+                                                <select name="mes" id="selectMes">
+                                                    <option disabled selected>Mes</option>
+                                                </select>
+                                                <i class="fas fa-angle-down"></i>
+                                            </div>
+                                            <div class="grupo-select">
+                                                <select name="year" id="selectYear">
+                                                    <option disabled selected>Año</option>
+                                                </select>
+                                                <i class="fas fa-angle-down"></i>
+                                            </div>
+                                        </div>
                                     </div>
-            
-                                    <div class="grupo" id="expiracion">
-                                        <p class="label">Expiracion</p>
-                                        <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+
+                                    <div class="grupo ccv">
+                                        <label for="inputCCV">CCV</label>
+                                        <input type="text" id="inputCCV" maxlength="3">
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-            
-                        <div class="trasera">
-                            <div class="barra-magnetica"></div>
-                            <div class="datos">
-                                <div class="grupo" id="firma">
-                                    <p class="label">Firma</p>
-                                    <div class="firma"><p></p></div>
+
+                                <div class="grupo">
+                                    <label id="subTotal">Subotal: </label>
+                                    <label id="total">Total + 13% IVA: </label>
                                 </div>
-                                <div class="grupo" id="ccv">
-                                    <p class="label">CCV</p>
-                                    <p class="ccv"></p>
-                                </div>
-                            </div>
-                            <p class="leyenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus exercitationem, voluptates illo.</p>
-                            <a href="#" class="link-banco">www.tubanco.com</a>
+
+                                
+                                <button type="submit" class="btn-enviar">Pagar</button>
+                            </form>
                         </div>
+
+                        <!--Fin pago-->
+
                     </section>
-            
-                    <!-- Contenedor Boton Abrir Formulario -->
-                    <div class="contenedor-btn">
-                        <button class="btn-abrir-formulario" id="btn-abrir-formulario">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-            
-                    <!-- Formulario -->
-                    <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
-                        <div class="grupo">
-                            <label for="inputNumero">Número Tarjeta</label>
-                            <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+                    <footer class="modal-card-foot">
+                        <div class="buttons">
+                            <p class="leyenda">©Copyright - Todos nuestros pagos son seguros
+                                No tenemos pruebas, pero tampoco dudas - UCR 2024</p>
                         </div>
-                        <div class="grupo">
-                            <label for="inputNombre">Nombre</label>
-                            <input type="text" id="inputNombre" maxlength="19" autocomplete="off">
-                        </div>
-                        <div class="flexbox">
-                            <div class="grupo expira">
-                                <label for="selectMes">Expiracion</label>
-                                <div class="flexbox">
-                                    <div class="grupo-select">
-                                        <select name="mes" id="selectMes">
-                                            <option disabled selected>Mes</option>
-                                        </select>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-                                    <div class="grupo-select">
-                                        <select name="year" id="selectYear">
-                                            <option disabled selected>Año</option>
-                                        </select>
-                                        <i class="fas fa-angle-down"></i>
-                                    </div>
-                                </div>
-                            </div>
-            
-                            <div class="grupo ccv">
-                                <label for="inputCCV">CCV</label>
-                                <input type="text" id="inputCCV" maxlength="3">
-                            </div>
-                        </div>
-                        <button type="submit" class="btn-enviar">Enviar</button>
-                    </form>
+                    </footer>
                 </div>
-
-                <!--Fin pago-->
-
-                </section>
-                <footer class="modal-card-foot">
-                    <div class="buttons">
-                        <button class="button is-success">Pagar</button>
-                    </div>
-                </footer>
             </div>
-        </div>
 
 
         </div>
 
 
+        
+          
+        
 
     </main>
 
@@ -270,6 +653,16 @@
             </p>
         </div>
     </footer>
+
+
+
+    
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('9rlbUNBJqI6S1Fd85')
+  </script>
 
     <script defer src="../js/script.js"></script>
     <script defer src="../js/pago.js"></script>

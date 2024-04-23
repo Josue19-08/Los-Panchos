@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BDLosPanchos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13bc04816cb85c38e6d6bf6003303bf4f9e5e23a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29d5977ad651ee80beca9fbb00bc2fc714602b42")]
 [assembly: System.Reflection.AssemblyProductAttribute("BDLosPanchos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BDLosPanchos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

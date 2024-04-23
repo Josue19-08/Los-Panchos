@@ -17,7 +17,5 @@ namespace LosPanchosDB
         public string origen { get; set; }
         public string destino { get; set; }
         public int km { get; set; }
-        public DateTime horaSalida { get; set; }
-        public DateOnly fechaViaje { get; set; }
     }
 }

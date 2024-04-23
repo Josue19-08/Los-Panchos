@@ -13,7 +13,11 @@ namespace LosPanchosDB
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public string busID { get; set; }
+        public int numAsiento { get; set; }
+        public int? tiqueteID { get; set; } 
+        [ForeignKey("tiqueteID")]
+        public virtual Tiquete Tiquete { get; set; }
+        public string busID { get; set; } 
         [ForeignKey("busID")]
         public virtual Bus Bus { get; set; }
     }
